@@ -82,6 +82,13 @@ export default {
             a {
                 text-decoration: none;
                 color: black;
+                padding-bottom: 3.9rem;
+                font-weight: bold;
+
+                &:hover {
+                    color: #0282F9;
+                    border-bottom: 3px solid #0282F9;
+                }
             }
         }
     }
