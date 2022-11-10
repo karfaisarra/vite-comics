@@ -58,7 +58,7 @@ export default {
             <div class="menu">
                 <ul>
                     <li v-for="el in menuEl">
-                        <a :href="el.href"> {{ el.name }}</a>
+                        <a :class="el.name === 'COMICS' ? 'active' : ''" :href="el.href"> {{ el.name }}</a>
                     </li>
                 </ul>
             </div>
@@ -79,10 +79,10 @@ export default {
         li {
             padding: 0 1rem;
 
-            a {
+            a:not(.active) {
                 text-decoration: none;
                 color: black;
-                padding-bottom: 3.9rem;
+                padding-bottom: 4rem;
                 font-weight: bold;
 
                 &:hover {
@@ -92,5 +92,13 @@ export default {
             }
         }
     }
+}
+
+.active {
+    color: #0282F9;
+    border-bottom: 3px solid #0282F9;
+    padding-bottom: 4rem;
+    text-decoration: none;
+    font-weight: bold;
 }
 </style>
