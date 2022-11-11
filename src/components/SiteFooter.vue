@@ -95,6 +95,10 @@ export default {
     a {
         text-decoration: none;
         color: gray;
+
+        &:hover {
+            color: white;
+        }
     }
 }
 
