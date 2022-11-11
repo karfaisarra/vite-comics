@@ -55,5 +55,9 @@ export default {
 .icons {
     padding: 3rem 0;
     background-color: #0282F9;
+
+    img {
+        width: 70px;
+    }
 }
 </style>
