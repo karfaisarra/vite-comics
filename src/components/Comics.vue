@@ -4,7 +4,7 @@ export default {
     name: 'Comics',
     data() {
         return {
-            comics: comics,
+            comics,
         }
     }
 }
@@ -54,7 +54,7 @@ export default {
 }
 
 .bottom {
-    height: 400px;
+    padding: 3rem 0;
     background-color: #1C1C1C;
 }
 </style>
