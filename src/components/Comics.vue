@@ -1,6 +1,6 @@
 <script>
 import comics from '../components/data/comics.js'
-import Comic from './Comic.vue'
+import ComicItem from './ComicItem.vue'
 export default {
     name: 'Comics',
     data() {
@@ -9,7 +9,7 @@ export default {
         }
     },
     components: {
-        Comic,
+        ComicItem,
     }
 }
 </script>
@@ -23,11 +23,14 @@ export default {
         <div class="bottom">
             <div class="container">
                 <div class="row row-cols-6 g-4">
-                    <Comic v-for="comic in comics" :image="comic.thumb" :title="comic.series" />
+                    <ComicItem v-for="comic in comics" :image="comic.thumb" :title="comic.series" />
+
+
                     <!--<div class="col" v-for="comic in comics">
                         <img :src="comic.thumb" alt="">
                         <h5>{{ comic.series }}</h5>
                     </div>-->
+
                 </div>
                 <div class="btn">
                     <a href="#">Load More</a>
