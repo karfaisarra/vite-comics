@@ -81,7 +81,7 @@ export default {
     </footer>
 
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 .top {
     background-image: url(../assets/img/footer-bg.jpg);
     height: 400px;
